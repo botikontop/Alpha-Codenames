@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #333;
+}
+
+h1 {
+    color: #fff;
+}
+
+#current-team {
+    display: inline-block;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.Red-team {
+    background-color: #ff4c4c;
+}
+
+.Blue-team {
+    background-color: #4c6eff;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.card {
+    width: 90px;
+    height: 60px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.Red {
+    background-color: #ff4c4c !important;
+    color: white;
+}
+
+.Blue {
+    background-color: #4c6eff !important;
+    color: white;
+}
+
+.Neutral {
+    background-color: #ddd !important;
+    color: black;
+}
+
+.Assassin {
+    background-color: black !important;
+    color: white;
+}
+
+#new-game, #show-words {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#new-game:hover, #show-words:hover {
+    background-color: #555;
+}
